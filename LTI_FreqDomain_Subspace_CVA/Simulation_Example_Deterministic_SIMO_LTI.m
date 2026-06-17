@@ -198,7 +198,7 @@ function [U_resp, Y_resp, X_resp] = LTI_freq(T, A, B, C, D, x0, window_start_mul
     t_max = start_idx + T_mul + 1;
     t = 1:t_max;
     
-    % 3. Excitation signal (Fixed 'N' to 'T')
+    % 3. Excitation signal 
     % u(t) = 2*cos(omega*t) ensures the fundamental FFT peak has amplitude 1
     u = 2 * cos((2 * pi / T) * t);
     
